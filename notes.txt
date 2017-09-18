@@ -1,0 +1,29 @@
+
+I used libtcod-cffi, YMMV
+
+need to put this as the import
+import tcod as libtcod
+
+Other notes, I think the library is looking for a py27 environment. The changes I had to make were really related to py3 not the tutorial being wrong.
+
+So part of the way through I switched with conda to a 27 environment
+
+activate py27env
+
+look up how to list the environments in conda to see the other choices.
+https://conda.io/docs/user-guide/tasks/manage-environments.html#activating-an-environment
+
+
+Got the stupid arial font from the libtcod source on bitbucket
+https://bitbucket.org/libtcod/libtcod/src/c5a397b8f50a5409da26c0025a11f090bb842f73/data/fonts/arial10x10.png?at=default
+
+mainline1.py - this is really the part1 code
+	- I changed the player positions to be int, libtcod would not work otherwise
+
+mainline_map.py - map part of tutorial
+	- I changed the position in the object to be an int
+
+mainline_dungeon.py - dungeon part of the tutorial
+	- I changed some of this (int stuff)
+	- then I switched to py27 and did not look back
+
